@@ -66,3 +66,12 @@ body{
     border-radius: 10px;
     background-color: black;
 }
+.tv-and-video{
+    position: relative;
+}
+.video{
+    position: absolute;
+    top: 25%;
+    right: 28%;
+    z-index: -1;
+}
