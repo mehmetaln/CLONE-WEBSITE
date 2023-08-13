@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 .hero-img{
     background: linear-gradient(rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.8))  ,url(img/background-img.jpeg);
@@ -86,7 +87,7 @@ body{
     width: 475px;
     height: 620px;
     background-color: rgba(0,0,0,.70);
-    top: 50%;
+    top: 0%;
     right: 35%;
 
 }
@@ -99,6 +100,7 @@ body{
     background-color: rgb(70, 67, 67);
     margin-top: 1.7rem;
     font-size: small    ;
+    padding: .5rem;
 }
 .sign-box-content{
     margin: 5rem;
@@ -108,14 +110,70 @@ body{
     height: 50px;
     background:#e50914;
 }
-.aciklama{
+.help-rememberme{
     display: flex;
     justify-content: space-between;
 }
 .rememberme input{
     width: 15px;
     height: 15px;
-position: absolute;
-left: 5%;
-    
+    position: absolute;
+    left:17%;
+    top: 57%;
 }
+.rememberme p{
+    margin-top: .4rem;
+    margin-left: 1.2rem;
+    color: grey;
+    font-size: small;
+}
+.help a{
+    color: gray;
+    font-size: small;
+    margin-top: .5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+.aciklama h4{
+    color: gray;
+    font-size: small;
+}
+.aciklama span{
+    color: white;
+}
+.aciklama p{
+    font-size: small;
+}
+.aciklama a{
+    text-decoration: none;
+}
+@media screen and (max-width:750px) {
+        .body-img{
+            background-image: none;
+        }
+        .sign-box{
+           position:relative ;
+
+        }
+        .sign-box-content{
+            position: absolute;
+            top: -10%;
+            right: -70%;
+        }
+        .help-rememberme{
+            position: relative;
+        }
+        .rememberme input{
+            position: absolute;
+            top: -42%;
+            left: -.5%;
+        }
+        .help a{
+            position: absolute;
+            right: 37%;
+        }
+        .sign-box-content input{
+            width: 150%;
+        }
+    
+    }
